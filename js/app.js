@@ -60,4 +60,10 @@ var Calculator = {
         Calculator.result = 0;
         Calculator.lastValue = 0;
     },
+    /**
+     * Function to change the sign number
+     */
+    changeSign: () => {
+        Calculator.displayValue = (Calculator.displayValue * -1);
+    },
 }
