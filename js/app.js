@@ -29,4 +29,24 @@ var Calculator = {
             return "ERROR";
         return (parseFloat(a) / parseFloat(b));
     },
+
+    /**
+     * Validate point and cero on screen
+     */
+    validateZero: (key, display) => {
+        if(key == 0 && display == "0")
+            return true;
+        return false;
+    },
+    validatePoint: display => {
+        if(/([.])/.test(display)){
+            return; 
+        }else {
+            if(display == "0") {
+                Calculator.displayValue = "0.";
+            }else {
+                Calculator.displayValue = Calculator.displayValue + ".";
+            }
+        }
+    },
 }
