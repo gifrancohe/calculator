@@ -49,4 +49,21 @@ var Calculator = {
             }
         }
     },
+    /**
+     * Function to reset calculator
+     */
+    onCFunction: () => {
+        Calculator.displayValue = 0;
+        Calculator.operator = null;
+        Calculator.value1 = 0;
+        Calculator.value2 = 0;
+        Calculator.result = 0;
+        Calculator.lastValue = 0;
+    },
+    /**
+     * Function to change the sign number
+     */
+    changeSign: () => {
+        Calculator.displayValue = (Calculator.displayValue * -1);
+    },
 }
