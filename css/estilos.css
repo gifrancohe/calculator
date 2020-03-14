@@ -44,6 +44,12 @@ body{
   width: 22%;
   height: 62.91px;
 }
+.teclado img.small {
+  width: 21%;
+  height: 62px;
+  border: 2px solid #33BEFF;
+  border-radius: 20%;
+}
 @font-face {
   font-family: digital;
   src: url("../fonts/digital.ttf");
@@ -75,9 +81,21 @@ body{
   margin-left: 10px;
 
 }
+#mas.small {
+  width: 89%;
+  height: 99%;
+  border: 2px solid #33BEFF;
+  border-radius: 20%;
+}
 .teclado .row .col1 img{
   width: 29%;
   height: 62.91px;
+}
+.teclado .row .col1 img.small {
+  width: 28.5%;
+  height: 62px;
+  border: 2px solid #33BEFF;
+  border-radius: 20%;
 }
 
 .container-libreta{

@@ -141,6 +141,7 @@ var Calculator = {
      */
     execute: (element) => {
         let key = element.alt;
+        element.classList.add("small"); //Add class to small button
         if(/^([0-9])*$/.test(key)) { //Validate if the key pressed is a number
             if(Calculator.validateZero(key, Calculator.displayValue)) {
                 return;
@@ -156,6 +157,7 @@ var Calculator = {
         }else {
             Calculator.functions(key);
         }
+        setTimeout(function(){element.classList.remove("small")}, 100)//Delete style to small button after waiting 100 milliseconds
     },
     /**
      * Funtion that initializes and assigns the execute function to all the calculator buttons
